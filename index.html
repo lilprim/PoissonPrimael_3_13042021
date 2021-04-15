@@ -5,30 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass_hmf/dart-sass/src/sass/style.css">
     <title>Document</title>
 </head>
 <body>
- <header>
-     <img src="images/logo/ohmyfood.png" alt="logo ho my food">
-        <span class="loc">
-            <i class="fas fa-map-marker-alt fas-sm"> </i>
-        </span>
-        <input type="text" id="adresse" placeholder="Paris,Belleville">
+
+ <header class="header">
+     <img class="header__logo" src="images/logo/ohmyfood.png" alt="logo ho my food">
+  </header>     
+    <main>
+        <section class="localisation">
         
- </header>
+            <i class="localisation__icone fas fa-map-marker-alt fas-sm"> </i>
+            
+              <span class="localisation__ville">Paris,Belleville</span> 
+        </section>
+        
+ 
 
     <!-- En tete -->
+    <section class="slogan">
+    <h1 class="slogan__title1">Réservez le menu qui vous convient</h1>
+        <h2 class="slogan__title2">Découvrez des restaurants d'exception, selectionnés par nos soins</h2>
 
-    <h1>Réservez le menu qui vous convient</h1>
-        <h2>Découvrez des restaurants d'exception, selectionnés par nos soins</h2>
+        <button type="button" class="slogan__button"><span>Explorez nos restaurants</span></button>
+    </section>
 
-        <button type="button" class="button_explo"><span>Explorez nos restaurants</span></button>
 
-    <h2>Fonctionnement</h2>
-       1 <button type="button" class="select_resto"><span>Choisissez un restaurant</span></button>
-       2 <button type="button" class="compo_menu"><span>Composez votre menu</span></button>
-        
+    <section class="fonction">
+    <h2 class="fonction__title2">Fonctionnement</h2>
+       1 <button type="button" class="fonction__button"><span>Choisissez un restaurant</span></button>
+       2 <button type="button" class="fonction__button"><span>Composez votre menu</span></button>
+       3 <button type="button" class="fonction__button"><span>Dégustez au restaurant </span></button>
+    </section>    
 
-    
+     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
