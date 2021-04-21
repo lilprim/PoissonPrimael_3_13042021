@@ -21,6 +21,11 @@ body{
         }
 }
 
+.button__back{
+
+    margin: 0 20px;
+}
+
 .localisation{
 
     background-color: rgb(231, 228, 228);
@@ -30,12 +35,12 @@ body{
     padding: 20px;
 }
 
-.localisation__icone{
+    .localisation__icone{
 
     margin: 0 20px;
 }
 
-.slogan{
+    .slogan{
 
     display: grid;
     grid-template-columns: 1fr;
@@ -48,6 +53,13 @@ body{
         padding: 20px;
     }
 
+    /* Images */
+
+    .restaurant__img{
+
+        width: 400px;
+        height: 400px;
+    }
 
     /* Footer */
 
