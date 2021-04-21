@@ -23,7 +23,8 @@ body{
 
 .button__back{
 
-    margin: 0 20px;
+    cursor: pointer;
+    
 }
 
 .localisation{
@@ -51,8 +52,21 @@ body{
 
         margin: 10px;
         padding: 20px;
-    }
+        }
 
+        &__button{
+
+        background: linear-gradient(#FF79DA, #9356DC);
+        border-radius: 2rem;
+        height: 50px;
+        padding: 3rem;
+        }
+
+   }
+
+    
+
+    
     /* Images */
 
     .restaurant__img{
