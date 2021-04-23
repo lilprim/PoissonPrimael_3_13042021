@@ -64,7 +64,18 @@ body{
 
    }
 
+    .restaurant{
+
+        background-color:rgb(243, 239, 239);
     
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 16px 0px;
+           
+          
+          
+    }
 
     
     /* Images */
@@ -87,4 +98,3 @@ body{
 
         font-family: "shrikhand";
     }
-}

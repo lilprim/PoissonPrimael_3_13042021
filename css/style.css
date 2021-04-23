@@ -14,7 +14,6 @@ body {
           justify-content: center;
   background-color: rgba(255, 255, 255, 0.133);
 }
-
 .header__logo {
   width: 250px;
 }
@@ -41,22 +40,15 @@ body {
 }
 
 .slogan {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-row: 3;
+  grid-template-columns: 1fr;
   grid-row: 3;
   background-color: #f3efef;
-  /* Images */
-  /* Footer */
 }
-
 .slogan__title1 {
   margin: 10px;
   padding: 20px;
 }
-
 .slogan__button {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
@@ -65,21 +57,27 @@ body {
   padding: 3rem;
 }
 
-.slogan .restaurant__img {
+.restaurant {
+  background-color: #f3efef;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 16px 0px;
+}
+
+/* Images */
+.restaurant__img {
   width: 400px;
   height: 400px;
 }
 
-.slogan footer {
-  display: -ms-grid;
+/* Footer */
+footer {
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 5fr;
-      grid-template-rows: 5fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5fr;
 }
 
-.slogan #footer__omf {
+#footer__omf {
   font-family: "shrikhand";
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
