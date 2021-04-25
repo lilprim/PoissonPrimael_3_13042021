@@ -24,7 +24,9 @@ body{
 .button__back{
 
     cursor: pointer;
-    
+    position: absolute;
+    top: 20px;
+    left: 10px;
 }
 
 .localisation{
