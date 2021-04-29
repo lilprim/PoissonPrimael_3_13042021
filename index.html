@@ -29,22 +29,34 @@
     <h1 class="slogan__title1">Réservez le menu qui vous convient</h1>
         <p class="slogan__title2">Découvrez des restaurants d'exception, selectionnés par nos soins</p>
 
-        <button type="button" class="slogan__button"><span class="slogan__text">Explorez nos restaurants</span></button>
+        <a class="slogan__button">Explorez nos restaurants</a>
     </section>
 
-    <h2 class="fonction__title2">Fonctionnement</h2>
         <section class="fonction">
-    
-            <p>1</p><button type="button" class="fonction__button"><span>Choisissez un restaurant</span></button>
-            <p>2</p><button type="button" class="fonction__button"><span>Composez votre menu</span></button>
-            <p>3</p><button type="button" class="fonction__button"><span>Dégustez au restaurant </span></button>
-
+            <h2 class="fonction__title2">Fonctionnement</h2>
+        <div class="fonction__etapes">
+           <div class="etape">
+               <span class="etape__chiffre">1</span>
+               <span class="etape__icone" ><i class="fas fa-mobile-alt "></i></span>
+                <span class="etape__texte"> Choisissez un restaurant</span>
+            </div>
+            <div class="etape">
+                <span class="etape__chiffre">2</span>
+                <span class="etape__icone"><i class="fas fa-list-ul"></i></span>
+                <span class="etape__texte"> Composez votre menu</span>
+            </div>
+            <div class="etape">
+                <span class="etape__chiffre">3</span>
+                <span class="etape__icone"><i class="fas fa-store"></i></span>
+                <span class="etape__texte">Dégustez au restaurant </span>
+            </div> 
+        </div>
         </section>    
 
     <section class="restaurant">
         <h1 class="restaurant__title1">Restaurants</h1>
 
-        <div class="restaurant__img"> 
+        <a href="palette.html" class="restaurant__img"> 
             <img  src="images/restaurants/img/restaurants-parisiens.jpg" alt="">
         <span class="nouveau">Nouveau</span>
             <div class="carte__footer">
@@ -54,7 +66,7 @@
                     <i class="far fa-heart carte__heart--vide"></i>
                 </span>
             </div>
-        </div>
+        </a>
 
         <div class="restaurant__img"> 
             <img  src="images/restaurants/img/plat_-_Restaurant.jpg" alt="">

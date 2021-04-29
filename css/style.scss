@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
-@import "variable";
+@import "_variable";
 
 body{
 
@@ -12,7 +12,7 @@ body{
     padding: 10px;
     display: flex;
     justify-content:  center;
-    background-color: $bleu;
+    background-color: $white;
 
         &__logo{ 
 
@@ -33,38 +33,46 @@ body{
 
     background-color: rgb(231, 228, 228);
     box-shadow: -1px 0 3px black;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
     .localisation__icone{
 
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
     .slogan{
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row: 3;
+    padding: 2rem;
+    text-align: center;
     background-color: rgb(243, 239, 239);
 
         &__title1{
 
         margin: 10px;
         padding: 20px;
+        font-size: 30px;
         }
         &__title2{
-            text-align: center;
+            font-size: 20px;
+            margin: 0 0 3rem;
+            color: grey;
         }
 
         &__button{
 
         background: linear-gradient(#FF79DA, #9356DC);
-        border-radius: 2rem;
-        height: 50px;
-        padding: 3rem;
+        padding: 2rem;
+        text-align: center;
+        font-weight: 500;
+        color: white;
+        border-radius: 100px;
+        box-shadow: 0px 9px 18px 2px rgba(0,0,0,0.39);
+        margin: 0 0 5rem;
+        font-size: 20px;
         }
         &__text{
 
@@ -81,27 +89,71 @@ body{
             display: grid;
             grid-template-columns: repeat (1, 1fr);
             column-gap: 2rem;
-            padding: 1rem;
+            padding: 1rem 1rem 5rem 1rem;
             margin: 0 auto;
             gap: 1rem;
     }
 
     .fonction{
 
-        display: flex;
-        flex-direction: column;
+        padding: 1rem;
+        
+        
+
+        &__title2{
+
+        margin: 2rem 0;
+        }
+        
+        &__etapes{
+
+            display: grid;
+
+        }
+    }
+
+    .etape{
+
+        
+        border-radius: 1.5rem;
+        padding: 2rem;
+        margin: 1rem 0 1rem 0.5rem;
+        box-shadow: 0px 9px 18px 2px rgba(0,0,0,0.39);
+        background-color: grey;
+        position: relative;
+
+
+        &__chiffre{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: -13px;
+            color: white;
+            border-radius: 100px;
+            height: 1.5rem;
+            width: 1.5rem;
+            background-color: $purple;
+            top: 28px;
+        }
+        &__icone{
+         
+            color:rgb(216, 212, 212);
+            margin: 0 1rem 0 1rem;
+            display: inline-block;
+            width: 20px;
+            font-size: 20px;
+        
+        }
+
+        &__texte{
+
+            font-weight: 500;
+        }
 
     }
 
-    .fonction p{
-
-        border-radius: 1.25rem;
-    }
-
-    .fonction__button{
-
-        border-radius: 1.25rem;
-    }
 
     
     /* Images */
@@ -151,10 +203,11 @@ body{
     .carte__heart--vide{
 
         position: absolute;
-        bottom: 3rem;
-        right: 2rem;
-        size: 10px;
+        bottom: 30px;
+        right: 20px;
+        font-size: 25px;
         cursor: pointer;
+
 
     }
         /* Footer */
@@ -166,11 +219,12 @@ body{
         grid-template-columns: 1fr;
         grid-template-rows: 5fr;
         
+        
     }
 
     footer p{
 
-        margin: 1.5rem;
+        margin: 1rem;
         padding: 0 0 0 1rem;
     }
 

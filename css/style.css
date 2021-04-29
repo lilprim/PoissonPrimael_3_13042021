@@ -12,8 +12,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(255, 255, 255, 0.133);
+  background-color: rgba(252, 252, 252, 0.133);
 }
+
 .header__logo {
   width: 250px;
 }
@@ -29,39 +30,48 @@ body {
   background-color: #e7e4e4;
   -webkit-box-shadow: -1px 0 3px black;
           box-shadow: -1px 0 3px black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
   padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .localisation__icone {
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .slogan {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row: 3;
+  padding: 2rem;
+  text-align: center;
   background-color: #f3efef;
 }
+
 .slogan__title1 {
   margin: 10px;
   padding: 20px;
+  font-size: 30px;
 }
+
 .slogan__title2 {
-  text-align: center;
+  font-size: 20px;
+  margin: 0 0 3rem;
+  color: grey;
 }
+
 .slogan__button {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 2rem;
-  height: 50px;
-  padding: 3rem;
+  padding: 2rem;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 9px 18px 2px rgba(0, 0, 0, 0.39);
+          box-shadow: 0px 9px 18px 2px rgba(0, 0, 0, 0.39);
+  margin: 0 0 5rem;
+  font-size: 20px;
 }
+
 .slogan__text {
   color: white;
   font-size: 15px;
@@ -69,32 +79,70 @@ body {
 
 .restaurant {
   background-color: #f3efef;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat 1, 1fr;
+  -ms-grid-columns: repeat 1, 1fr;
+      grid-template-columns: repeat 1, 1fr;
   -webkit-column-gap: 2rem;
-     -moz-column-gap: 2rem;
           column-gap: 2rem;
-  padding: 1rem;
+  padding: 1rem 1rem 5rem 1rem;
   margin: 0 auto;
   gap: 1rem;
 }
 
 .fonction {
+  padding: 1rem;
+}
+
+.fonction__title2 {
+  margin: 2rem 0;
+}
+
+.fonction__etapes {
+  display: -ms-grid;
+  display: grid;
+}
+
+.etape {
+  border-radius: 1.5rem;
+  padding: 2rem;
+  margin: 1rem 0 1rem 0.5rem;
+  -webkit-box-shadow: 0px 9px 18px 2px rgba(0, 0, 0, 0.39);
+          box-shadow: 0px 9px 18px 2px rgba(0, 0, 0, 0.39);
+  background-color: grey;
+  position: relative;
+}
+
+.etape__chiffre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: -13px;
+  color: white;
+  border-radius: 100px;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #9356DC;
+  top: 28px;
 }
 
-.fonction p {
-  border-radius: 1.25rem;
+.etape__icone {
+  color: #d8d4d4;
+  margin: 0 1rem 0 1rem;
+  display: inline-block;
+  width: 20px;
+  font-size: 20px;
 }
 
-.fonction__button {
-  border-radius: 1.25rem;
+.etape__texte {
+  font-weight: 500;
 }
 
 /* Images */
@@ -141,22 +189,25 @@ body {
 /* Coeur */
 .carte__heart--vide {
   position: absolute;
-  bottom: 3rem;
-  right: 2rem;
-  size: 10px;
+  bottom: 30px;
+  right: 20px;
+  font-size: 25px;
   cursor: pointer;
 }
 
 /* Footer */
 footer {
   background-color: #3d3d3d;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 5fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 5fr;
+      grid-template-rows: 5fr;
 }
 
 footer p {
-  margin: 1.5rem;
+  margin: 1rem;
   padding: 0 0 0 1rem;
 }
 
@@ -173,4 +224,5 @@ footer .fas {
   font-family: "shrikhand";
   color: white;
   font-size: 20px;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
