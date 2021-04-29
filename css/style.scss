@@ -55,6 +55,9 @@ body{
         margin: 10px;
         padding: 20px;
         }
+        &__title2{
+            text-align: center;
+        }
 
         &__button{
 
@@ -62,6 +65,11 @@ body{
         border-radius: 2rem;
         height: 50px;
         padding: 3rem;
+        }
+        &__text{
+
+            color: white;
+            font-size: 15px;
         }
 
    }
@@ -76,9 +84,23 @@ body{
             padding: 1rem;
             margin: 0 auto;
             gap: 1rem;
-           
-          
-          
+    }
+
+    .fonction{
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .fonction p{
+
+        border-radius: 1.25rem;
+    }
+
+    .fonction__button{
+
+        border-radius: 1.25rem;
     }
 
     
@@ -132,6 +154,7 @@ body{
         bottom: 3rem;
         right: 2rem;
         size: 10px;
+        cursor: pointer;
 
     }
         /* Footer */
@@ -142,6 +165,13 @@ body{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 5fr;
+        
+    }
+
+    footer p{
+
+        margin: 1.5rem;
+        padding: 0 0 0 1rem;
     }
 
     .footer__para{
