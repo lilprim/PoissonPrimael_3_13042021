@@ -7,7 +7,7 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
-.header{
+.header{ 
 
     padding: 10px;
     display: flex;
@@ -17,17 +17,10 @@ body{
         &__logo{ 
 
             width: 250px;
-        
         }
 }
 
-.button__back{
 
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    left: 10px;
-}
 
 .localisation{
 
@@ -45,11 +38,11 @@ body{
 }
 
     .slogan{
-
+    
     padding: 2rem;
     text-align: center;
     background-color: rgb(243, 239, 239);
-
+    
         &__title1{
 
         margin: 10px;
@@ -119,7 +112,7 @@ body{
         padding: 2rem;
         margin: 1rem 0 1rem 0.5rem;
         box-shadow: 0px 9px 18px 2px rgba(0,0,0,0.39);
-        background-color: grey;
+        background-color: rgb(245, 243, 243);
         position: relative;
 
 
@@ -129,17 +122,17 @@ body{
             align-items: center;
             justify-content: center;
             position: absolute;
-            left: -13px;
+            left: -15px;
             color: white;
             border-radius: 100px;
-            height: 1.5rem;
-            width: 1.5rem;
+            height: 2rem;
+            width: 2rem;
             background-color: $purple;
             top: 28px;
         }
         &__icone{
          
-            color:rgb(216, 212, 212);
+            color:grey;
             margin: 0 1rem 0 1rem;
             display: inline-block;
             width: 20px;
@@ -149,13 +142,12 @@ body{
 
         &__texte{
 
-            font-weight: 500;
+            font-weight: 700;
+
         }
 
     }
-
-
-    
+ 
     /* Images */
 
     .restaurant__img{
@@ -195,9 +187,7 @@ body{
         padding: 1rem;
     }
 
-    .carte__titre{
-        margin: 0 0 5px 0;
-    }
+    
     /* Coeur */
 
     .carte__heart--vide{
@@ -246,4 +236,110 @@ body{
         font-size: 20px;
     }
 
+    /* palette.HTML */
+
+    .back_button{
+
+        
+    }
+
+    .restaurant__img-link{
+
+        width: 100%;
+    }
+
+    .carte{
+        
+        background-color: rgb(243, 241, 241);
+        border-radius: 2rem 2rem 0 0;
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat;
+        gap: 1rem;
+        
+
+        &__title1{
+
+            font-family: "shrikhand";
+            margin: 2rem 0 0 1.5rem;
+            
+        }
+
+        &__heart-menu--vide{
+
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            margin: auto;
+            font-style: 25px;
+
+        }
+
+        &__titre1{
+
+            margin: 0 0rem 0.5rem 1rem;
+            border-bottom: 2px solid #99E2D0;
+            font-weight: 500;
+            
+        }
+
+        &__menu{
+            
+            border-radius: 1.5rem;
+            background-color: white;
+            box-shadow: 0px 5px 5px 2px rgba(112, 111, 111, 0.39);
+            padding: 0.5rem;
+            margin: 0.5rem;
+            
+        }
+
+        &__plat{
+
+            margin: 2px 0 0 15px;
+            padding-bottom: 0.5rem;
+        }
+
+        &__description{
+
+            margin: 0px 0 5px 15px;
+        }
+
+        &__prix{
+
+            position: absolute;
+            right: 20px;
+            font-weight: 600;   
+        }
+        
+    }
+
     
+
+    .button{
+
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0 0 0;
+        
+        &__command{
+
+        
+        background: linear-gradient(#FF79DA, #9356DC);
+        padding: 2rem;
+        text-align: center;
+        font-weight: 500;
+        color: white;
+        border-radius: 2.5rem;
+        box-shadow: 0px 9px 18px 2px rgba(0,0,0,0.39);
+        margin: 0;
+        font-size: 20px;
+
+        }
+    }
+
+    
+
+    
+
+
