@@ -8,6 +8,81 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* Animation */
+.overflow {
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  -webkit-animation: overflow 3s;
+          animation: overflow 3s;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overflow__loader {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.overflow__loader:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #9356DC;
+  border-color: #9356DC transparent #9356DC transparent;
+  -webkit-animation: loader 2.5s linear;
+          animation: loader 2.5s linear;
+}
+
+@-webkit-keyframes overflow {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes overflow {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .header {
   padding: 10px;
   display: flex;
@@ -91,6 +166,10 @@ body {
   background-color: #f5f3f3;
   position: relative;
 }
+.etape:hover {
+  background-color: white;
+  box-shadow: 0px 9px 18px 2px rgba(0, 0, 0, 0.5);
+}
 .etape__chiffre {
   display: flex;
   align-items: center;
@@ -152,12 +231,33 @@ body {
 }
 
 /* Coeur */
+.carte__heart:hover .carte__heart--vide {
+  opacity: 0;
+  transition-duration: 0.8s;
+}
+.carte__heart:hover .carte__heart--plein {
+  opacity: 1;
+  transition-duration: 0.8s;
+}
+
 .carte__heart--vide {
   position: absolute;
   bottom: 30px;
   right: 20px;
   font-size: 25px;
   cursor: pointer;
+}
+
+.carte__heart--plein {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  opacity: 0;
 }
 
 /* Footer */
@@ -205,6 +305,34 @@ footer .fas {
   gap: 1rem;
   margin-top: -4rem;
   position: relative;
+  /* animation check */
+}
+.carte__gauche {
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 1;
+}
+.carte__validation {
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  margin: -1rem -5rem -1rem 0;
+  transition-duration: 0.5s;
+}
+.carte__icone {
+  border-radius: 100%;
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #99e2d0;
+}
+.carte__icone i {
+  transition-duration: 0.5s;
 }
 .carte__title1 {
   font-family: "shrikhand";
@@ -236,6 +364,41 @@ footer .fas {
   box-shadow: 0px 5px 5px 2px rgba(112, 111, 111, 0.39);
   padding: 0.5rem;
   margin: 0.5rem;
+  -webkit-animation: move 1s;
+          animation: move 1s;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  max-width: 100%;
+  overflow: hidden;
+}
+.carte__menu:hover .carte__validation {
+  margin-right: -1rem;
+}
+.carte__menu:hover .carte__icone i {
+  -webkit-animation: loader 0.5s 0.1s both;
+          animation: loader 0.5s 0.1s both;
+}
+@-webkit-keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 .carte__plat {
   margin: 2px 0 0 15px;
@@ -243,11 +406,63 @@ footer .fas {
 }
 .carte__description {
   margin: 0px 0 5px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .carte__prix {
-  position: absolute;
-  right: 20px;
+  font-size: 16px;
   font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+/* animation menu */
+.entree1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.entree2 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.entree3 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.plat1 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.plat2 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.plat3 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.dessert1 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.dessert2 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.dessert3 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .back_button {
