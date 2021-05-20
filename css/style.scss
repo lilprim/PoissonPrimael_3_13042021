@@ -39,7 +39,7 @@ body{
         border-radius: 50%;
         border: 6px solid #9356DC;
         border-color: #9356DC transparent #9356DC transparent;
-        animation: loader 2.5s linear;
+        animation: loader 2s linear;
       }
     }
 
@@ -266,12 +266,12 @@ body{
 
             .carte__heart--vide{
                 opacity: 0;
-                transition-duration: 0.8s;
+                transition-duration: 0.4s;
             }
             .carte__heart--plein{
 
                 opacity: 1;
-                transition-duration: 0.8s;
+                transition-duration: 0.4s;
             }
 
         }
@@ -286,6 +286,8 @@ body{
         cursor: pointer;
         
     }
+
+    
 
     .carte__heart--plein{
 
@@ -337,7 +339,10 @@ body{
         font-size: 20px;
     }
 
-    /* palette.HTML */
+   /*  ----------------------------------------------------------------*/
+
+
+    /* liens.HTML */
 
     
     .restaurant__img-link{
@@ -364,6 +369,8 @@ body{
             overflow: hidden;
             flex: 1;
         }
+
+        
 
         /* animation check */
 
@@ -402,14 +409,15 @@ body{
             
         }
 
-        &__heart-menu--vide{
+        &__heart-menu--empty{
 
             position: absolute;
             top: 35px;
             right: 30px;
             font-size: 25px;
         }
-
+        
+        
         &__titre1{
 
             margin: 0 0rem 0.5rem 1rem;
@@ -425,8 +433,6 @@ body{
                 width: 50px;
                 height: 3px;
                 content: "";
-                
-
             }
             
         }
@@ -481,7 +487,7 @@ body{
 
         &__description{
 
-            margin: 0px 0 5px 15px;
+            margin: 0px 0 5px 17px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -532,11 +538,6 @@ body{
     }
     
 
-
-
-
-    
-
     .back_button{
 
         position: absolute;
@@ -544,8 +545,6 @@ body{
         top: 18px;
 
     }
-
-    
 
     .button{
 
@@ -569,8 +568,35 @@ body{
         }
     }
 
+
+    /* MEDIA QUERIES */
+
+    @media (min-width: 700px) and (max-width: 1200px)
+
+    {
+
+    .fonction__etapes{
+        
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    /* liens */
+
+    .restaurant__img-link{
+
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin-left: 5rem;
+    }
+
     
 
+    
+}
     
 
 
