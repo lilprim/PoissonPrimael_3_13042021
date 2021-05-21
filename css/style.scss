@@ -282,6 +282,8 @@ body{
     
     /* Coeur */
 
+    
+
     .carte__heart{
         &:hover{
 
@@ -322,8 +324,13 @@ body{
         -webkit-background-clip: text;
         opacity: 0;
 
-
+      
     }
+        .coeur_acceuil{
+            bottom: 30px;
+            top: inherit !important;
+        
+        }
         /* Footer */
 
     footer{
