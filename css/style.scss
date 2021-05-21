@@ -4,6 +4,12 @@ a {
     color: black;
 }
 
+.contact{
+
+    text-decoration: none;
+    color: white;
+}
+
 body{
 
     margin: 0;
@@ -124,7 +130,7 @@ body{
         &__button{
 
         background: linear-gradient(#FF79DA, #9356DC);
-        padding: 2rem;
+        padding: 0.75rem 1.5rem;
         text-align: center;
         font-weight: 500;
         color: white;
@@ -132,7 +138,13 @@ body{
         box-shadow: 0px 9px 18px 2px rgba(0,0,0,0.39);
         margin: 0 0 5rem;
         font-size: 20px;
+        cursor: pointer;
+
+        &:hover{
+            box-shadow: 0px 9px 18px 2px rgba(0,0,0,0.60);
         }
+        }
+
         &__text{
 
             color: white;
@@ -151,6 +163,10 @@ body{
             padding: 1rem 1rem 5rem 1rem;
             margin: 0 auto;
             gap: 1rem;
+
+            &__title1{
+                grid-column: 1/-1;
+            }
     }
 
     .fonction{
@@ -184,6 +200,11 @@ body{
         &:hover{
             background-color: lighten($color: rgba(245, 243, 243), $amount: 20);
             box-shadow: 0px 9px 18px 2px rgba(0,0,0,0.50);
+
+            .etape__icone{
+
+                color:#9356DC
+            }
         }
 
 
@@ -348,6 +369,9 @@ body{
     .restaurant__img-link{
 
         width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        max-height: 26rem;
         z-index: 0;
     }
 
@@ -409,13 +433,24 @@ body{
             
         }
 
-        &__heart-menu--empty{
+        &__heart--vide{
 
             position: absolute;
             top: 35px;
             right: 30px;
             font-size: 25px;
         }
+
+        &__heart--plein{   
+            
+            position: absolute;
+            top: 35px;
+            right: 30px;
+            font-size: 25px;
+
+            
+        }
+
         
         
         &__titre1{
@@ -556,6 +591,7 @@ body{
 
         
         background: linear-gradient(#FF79DA, #9356DC);
+        cursor: pointer;
         padding: 1rem 3rem ;
         text-align: center;
         font-weight: 400;
@@ -565,13 +601,18 @@ body{
         margin: 0;
         font-size: 15px;
 
+        &:hover{
+        
+            box-shadow: 0px 9px 18px 2px rgba(0,0,0,0.70);
+    }
+
         }
     }
 
 
     /* MEDIA QUERIES */
 
-    @media (min-width: 700px) and (max-width: 1200px)
+    @media (min-width: 1050px) 
 
     {
 
@@ -585,18 +626,31 @@ body{
 
     /* liens */
 
-    .restaurant__img-link{
+    
 
-        width: 80%;
-        display: flex;
-        align-items: center;
-        margin-left: 5rem;
+    .restaurant{
+        max-width: 1440px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
+    .fonction{
+
+        max-width: 1440px;  
+        margin: 0 auto;
+    }
     
 
-    
+    .liste_plats{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+        
 }
     
+
 
 

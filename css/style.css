@@ -3,6 +3,11 @@ a {
   color: black;
 }
 
+.contact {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -123,7 +128,7 @@ body {
 }
 .slogan__button {
   background: linear-gradient(#FF79DA, #9356DC);
-  padding: 2rem;
+  padding: 0.75rem 1.5rem;
   text-align: center;
   font-weight: 500;
   color: white;
@@ -131,6 +136,10 @@ body {
   box-shadow: 0px 9px 18px 2px rgba(0, 0, 0, 0.39);
   margin: 0 0 5rem;
   font-size: 20px;
+  cursor: pointer;
+}
+.slogan__button:hover {
+  box-shadow: 0px 9px 18px 2px rgba(0, 0, 0, 0.6);
 }
 .slogan__text {
   color: white;
@@ -146,6 +155,9 @@ body {
   padding: 1rem 1rem 5rem 1rem;
   margin: 0 auto;
   gap: 1rem;
+}
+.restaurant__title1 {
+  grid-column: 1/-1;
 }
 
 .fonction {
@@ -169,6 +181,9 @@ body {
 .etape:hover {
   background-color: white;
   box-shadow: 0px 9px 18px 2px rgba(0, 0, 0, 0.5);
+}
+.etape:hover .etape__icone {
+  color: #9356DC;
 }
 .etape__chiffre {
   display: flex;
@@ -292,6 +307,10 @@ footer .fas {
 /* liens.HTML */
 .restaurant__img-link {
   width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 26rem;
   z-index: 0;
 }
 
@@ -339,7 +358,13 @@ footer .fas {
   font-family: "shrikhand";
   margin: 2rem 0 0 1.5rem;
 }
-.carte__heart-menu--empty {
+.carte__heart--vide {
+  position: absolute;
+  top: 35px;
+  right: 30px;
+  font-size: 25px;
+}
+.carte__heart--plein {
   position: absolute;
   top: 35px;
   right: 30px;
@@ -479,6 +504,7 @@ footer .fas {
 }
 .button__command {
   background: linear-gradient(#FF79DA, #9356DC);
+  cursor: pointer;
   padding: 1rem 3rem;
   text-align: center;
   font-weight: 400;
@@ -488,9 +514,12 @@ footer .fas {
   margin: 0;
   font-size: 15px;
 }
+.button__command:hover {
+  box-shadow: 0px 9px 18px 2px rgba(0, 0, 0, 0.7);
+}
 
 /* MEDIA QUERIES */
-@media (min-width: 700px) and (max-width: 1200px) {
+@media (min-width: 1050px) {
   .fonction__etapes {
     display: flex;
     align-items: flex-start;
@@ -499,10 +528,20 @@ footer .fas {
   }
 
   /* liens */
-  .restaurant__img-link {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    margin-left: 5rem;
+  .restaurant {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fonction {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .liste_plats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */
