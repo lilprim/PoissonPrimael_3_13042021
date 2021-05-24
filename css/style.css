@@ -170,6 +170,10 @@ body {
   display: grid;
 }
 
+.liste_entree {
+  padding: 0 0 2rem 0;
+}
+
 .etape {
   border-radius: 1.5rem;
   padding: 2rem;
