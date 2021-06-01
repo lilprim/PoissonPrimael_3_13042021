@@ -203,7 +203,7 @@ body{
         position: relative;
 
         &:hover{
-            background-color: lighten($color: rgba(245, 243, 243), $amount: 20);
+            background-color: lighten($color: rgb(245, 243, 243), $amount: 20);
             box-shadow: 0px 9px 18px 2px rgba(0,0,0,0.50);
 
             .etape__icone{
