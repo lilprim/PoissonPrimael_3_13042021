@@ -187,10 +187,14 @@ body{
         }
     }
 
+    .liste_plats{
+        display: grid;
+    }
+
     .liste_entree{
 
-        padding: 0 0 2rem 0;
-    }
+padding: 1rem;
+display: inherit;    }
 
     .etape{
 
