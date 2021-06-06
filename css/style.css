@@ -103,12 +103,22 @@ body {
   box-shadow: -1px 0 3px black;
   text-align: center;
   padding: 20px;
-  font-size: 20px;
-  font-weight: bold;
 }
 .localisation__ville {
   border: none;
   background-color: #e7e4e4;
+}
+.localisation__ville ::-moz-placeholder {
+  font-weight: bold;
+  font-size: 20px;
+}
+.localisation__ville :-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 20px;
+}
+.localisation__ville ::placeholder {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .localisation__icone {
@@ -446,7 +456,9 @@ footer .fas {
 .carte__plat {
   margin: 2px 0 0 15px;
   padding-bottom: 0.5rem;
-  white-space: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .carte__description {
   margin: 0px 0 5px 17px;
