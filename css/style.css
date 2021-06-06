@@ -106,6 +106,10 @@ body {
   font-size: 20px;
   font-weight: bold;
 }
+.localisation__ville {
+  border: none;
+  background-color: #e7e4e4;
+}
 
 .localisation__icone {
   margin: 0 10px;
@@ -149,7 +153,7 @@ body {
 .restaurant {
   background-color: #f3efef;
   display: grid;
-  grid-template-columns: repeat 1, 1fr;
+  grid-template-columns: repeat(1fr);
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   padding: 1rem 1rem 5rem 1rem;
@@ -335,7 +339,6 @@ footer .fas {
   padding-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat;
   gap: 1rem;
   margin-top: -4rem;
   position: relative;
@@ -443,6 +446,7 @@ footer .fas {
 .carte__plat {
   margin: 2px 0 0 15px;
   padding-bottom: 0.5rem;
+  white-space: normal;
 }
 .carte__description {
   margin: 0px 0 5px 17px;
