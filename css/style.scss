@@ -106,14 +106,16 @@ body{
 
         border: none;
         background-color: #e7e4e4;
-        ::placeholder{
-            font-weight: bold;
-            font-size: 20px;
-        }
         
     }
     
     
+}
+
+.localisation__ville::placeholder{
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
 }
 
     .localisation__icone{

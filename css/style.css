@@ -108,17 +108,23 @@ body {
   border: none;
   background-color: #e7e4e4;
 }
-.localisation__ville ::-moz-placeholder {
+
+.localisation__ville::-moz-placeholder {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  color: black;
 }
-.localisation__ville :-ms-input-placeholder {
+
+.localisation__ville:-ms-input-placeholder {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  color: black;
 }
-.localisation__ville ::placeholder {
+
+.localisation__ville::placeholder {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  color: black;
 }
 
 .localisation__icone {
